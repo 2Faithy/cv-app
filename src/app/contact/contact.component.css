@@ -1,0 +1,112 @@
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px;
+    background: #1c1c1c; /* Dark background */
+    color: #fff; /* White text */
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #f6f7c4; /* Soft yellow for the title */
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+  
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .contact-info,
+  .contact-form {
+    flex: 1;
+    background: #2c2c2c; /* Slightly lighter background for each box */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-info {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .contact-form {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .contact-info:hover,
+  .contact-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+  }
+  
+  .contact-heading {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #f6f7c4; /* Light yellow color */
+  }
+  
+  .contact-details {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #ddd;
+  }
+  
+  .contact-details li {
+    margin-bottom: 10px;
+  }
+  
+  .form-input {
+    width: 95%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-input::placeholder {
+    color: #ccc;
+  }
+  
+  .form-input:focus {
+    border-color: #a1eebd; /* Soft green when focused */
+  }
+  
+  .submit-btn {
+    background-color: #f6f7c4;
+    color: #1c1c1c;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #a1eebd; /* Soft green on hover */
+    color: #fff;
+  }
+  
+
+  .success-message {
+    color: green;
+    font-size: 1.2em;
+    margin-top: 10px;
+    background-color: #f0fff4;
+    padding: 10px;
+    border: 1px solid #d4edda;
+    border-radius: 5px;
+  }
+  

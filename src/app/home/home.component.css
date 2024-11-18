@@ -1,0 +1,172 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #000; /* Solid black background */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: row; /* Align content horizontally on large screens */
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  flex-wrap: wrap; /* Ensure proper wrapping on smaller screens */
+}
+
+/* Welcome Content */
+.welcome-content {
+  flex: 1; /* Take available space */
+  max-width: 50%; /* Limit width for better balance */
+  text-align: left; /* Align text to the left */
+}
+
+.animated-text {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #F6F7C4, #A1EEBD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textGlow 3s ease-in-out infinite;
+}
+
+.subheading {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  animation: slideUp 1.5s ease-out;
+  color: #000; 
+}
+
+.explore-button {
+  background-color: #A1EEBD;
+  color: #000;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  animation: bounce 2s infinite;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color: #F6F7C4;
+  transform: scale(1.1);
+}
+
+/* Welcome Image */
+.welcome-image {
+  flex: 1; /* Take available space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%; /* Adjust image container width */
+}
+
+.welcome-image img {
+  max-width: 80%; /* Slightly smaller for balance */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3), 0 4px 15px rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Soft border */
+  transition: transform 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
+}
+
+.welcome-image img:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.5), 0 6px 20px rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .welcome-container {
+    flex-direction: column; /* Stack content vertically */
+    text-align: center; /* Center-align text */
+    padding: 20px;
+  }
+
+  .welcome-image {
+    margin: 0 auto; /* Center the image container */
+    padding: 10px; /* Reduce padding for better fit on smaller screens */
+  }
+
+  .welcome-image img {
+    max-width: 80%; /* Scale image to fit the screen */
+    border-radius: 10px; /* Slightly smaller border radius */
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2), 0 3px 10px rgba(255, 255, 255, 0.1); /* Subtle shadow */
+  }
+
+  .welcome-content {
+    padding: 10px; /* Reduce padding for compact layout */
+    max-width: 90%; /* Ensure text doesn't stretch edge-to-edge */
+    margin-bottom: 20px; /* Add space below text */
+  }
+}
+
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .welcome-container {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+  }
+
+  .welcome-content {
+    text-align: center; /* Center-align text on smaller screens */
+    padding: 20px;
+  }
+
+  .welcome-image img {
+    max-width: 80%; /* Increase size for smaller screens */
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes textGlow {
+  0%, 100% {
+    text-shadow: 0 0 10px #F6F7C4, 0 0 20px #A1EEBD, 0 0 30px #7BD3EA;
+  }
+  50% {
+    text-shadow: 0 0 15px #A1EEBD, 0 0 30px #7BD3EA, 0 0 45px #F6F7C4;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

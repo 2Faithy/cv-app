@@ -1,0 +1,27 @@
+<section id="contact" class="contact-section">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-content">
+      <div class="contact-info">
+        <h3 class="contact-heading">Get in Touch</h3>
+        <p>If you're interested in collaborating on a project or simply want to reach out, feel free to contact me. I’d love to hear from you!</p>
+        <ul class="contact-details">
+          <li><strong>Email:</strong><a href="mailto:faithonwuemeri2008&#64;gmail.com">faithonwuemeri2008&#64;gmail.com</a></li>
+          <li><strong>Phone:</strong> +234 812 745 2876</li>
+          <li><strong>Location:</strong> Magboro, Nigeria</li>
+        </ul>
+      </div>
+      <div class="contact-form">
+        <h3 class="contact-heading">Send a Message</h3>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <input type="text" class="form-input" formControlName="name" placeholder="Your Name" required>
+          <input type="email" class="form-input" formControlName="email" placeholder="Your Email" required>
+          <textarea class="form-input" formControlName="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="submit-btn" [disabled]="!contactForm.valid">Send Message</button>
+        </form>
+        <div *ngIf="successMessage" class="success-message">
+          {{ successMessage }}
+        </div>
+      </div>      
+    </div>
+  </section>
+  

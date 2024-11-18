@@ -1,0 +1,90 @@
+/* Experience Section */
+.experience-section {
+    padding: 50px 20px;
+    background: #000; /* Black background */
+    color: #fff; /* White text */
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #f6f7c4; /* Soft yellow title */
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+  
+  .experience-timeline {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 40px;
+  }
+  
+  .experience-timeline::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #a1eebd; /* Soft green timeline */
+  }
+  
+  .experience-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .experience-dot {
+    width: 16px;
+    height: 16px;
+    background: #f6f7c4; /* Yellowish dot */
+    border-radius: 50%;
+    position: absolute;
+    left: 12px;
+    top: 5px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+  }
+  
+  .experience-content {
+    background: #1a1a1a; /* Dark gray card background */
+    border: 1px solid #333; /* Subtle border */
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .experience-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+  }
+  
+  .experience-role {
+    font-size: 1.5rem;
+    color: #fff; /* White text */
+    margin: 0 0 5px;
+  }
+  
+  .experience-company {
+    font-size: 1.2rem;
+    color: #7bd3ea; /* Light blue text */
+    margin-bottom: 10px;
+  }
+  
+  .experience-duration {
+    font-size: 0.9rem;
+    color: #ccc; /* Light gray text */
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .experience-description {
+    font-size: 1rem;
+    color: #ddd; /* Softer gray text */
+    line-height: 1.6;
+  }
+  
